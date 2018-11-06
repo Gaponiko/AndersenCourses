@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function getCloneOfObj(obj) {
+        return JSON.parse(JSON.stringify(obj));
+    }
+
+    var theFirstObj = {
+        name: "Михаил",
+        question: "Как делишки?",
+        traits: {
+            luck: 2,
+            eloquence: 4
+        }
+    };
+
+    var theSecondObj = getCloneOfObj(theFirstObj);
+</script>
+</body>
+</html>
